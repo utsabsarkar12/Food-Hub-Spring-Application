@@ -37,19 +37,24 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
     <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 
-            </button>
-            <a class="navbar-brand" th:href="@{/admin}">Admin Panel</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
+                </button>
+                <a class="navbar-brand" th:href="@{/admin}">Admin Panel</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
 
-            <ul class="nav navbar-nav navbar-right">
-                <li><a th:href="@{/index}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="navbar-brand" th:href="@{/index}">User Panel</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </nav>
@@ -71,7 +76,7 @@
         </div>
 
         <div class="item">
-            <img src="https://placehold.it/1200x400?text=Food-Canteen" alt="Image">
+            <img src="https://placehold.it/1200x400?text=DIU-Food-Court" alt="Image">
             <div class="carousel-caption">
 
             </div>
